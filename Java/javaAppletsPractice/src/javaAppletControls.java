@@ -1,3 +1,4 @@
+// <applet code = javaAppletControls.class width = 1000  height = 1000> </applet>
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;

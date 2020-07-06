@@ -12,9 +12,13 @@ JTextArea tar;
 		Container cref = getContentPane();
 		cref.setLayout(new FlowLayout()); // setting the layout
 		lbl1 = new JLabel("Enter your email id:");
+		lbl1.setForeground(Color.black);
+		lbl1.setBackground(Color.black);
 		tft1 = new JTextField(45);
-		tar = new JTextArea("",51,12);
+		tft1.setBackground(Color.pink);
+		tar = new JTextArea("",12,51);
 		cref.add(lbl1);
 		cref.add(tft1);
+		cref.add(tar);
 	}
 }

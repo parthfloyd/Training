@@ -46,7 +46,7 @@ public class deleteNoteServlet extends HttpServlet {
 		int noteId = Integer.parseInt(request.getParameter("noteNumber"));
 		PrintWriter out = response.getWriter();
 		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-		//Fetching username from cookie
+		//Fetching username from cookie TO MAKE SURE ANOTHER USER DOESN`t DELETE NOTE BY MISTAKE
 		Cookie loginRef[] = request.getCookies();
 		String userName = "";
 		for(Cookie y : loginRef){
@@ -67,7 +67,7 @@ public class deleteNoteServlet extends HttpServlet {
 		int rowCount = pst.executeUpdate();
 		if(rowCount == 0) {
 			out.print("Error: There was an error while deleting the note, please enter id correctly!");
-			rd.forward(request, response);
+			rd.include(request, response);
 		}
 		else
 			response.sendRedirect("index.jsp");

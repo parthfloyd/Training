@@ -30,7 +30,7 @@ public class MainCRUDFile {
 		System.out.println("Enter the Gender:");
 		String gender = input.next();
 		System.out.println("Enter the Department:");
-		String department = input.next();
+		String department = input.nextLine();
 		System.out.println("Enter the JoiningYear:");
 		int year = Integer.parseInt(input.next());
 		
@@ -61,7 +61,7 @@ public class MainCRUDFile {
 		System.out.println("Enter the name of employee:");
 		String name = input.nextLine(); //Gotta use nextLine for full name
 		System.out.println("Enter name of new Department:");
-		String department = input.next();
+		String department = input.nextLine();
 		collection.updateOne(Filters.eq("name", name),
 	            Updates.set("department", department));
 	}

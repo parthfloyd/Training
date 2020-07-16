@@ -32,12 +32,8 @@ public class MainFile {
 		    MainCRUDFile obj = new MainCRUDFile();
 		    while(true) {
 		    	System.out.println("=======================================");
-		    	System.out.println("EMPLOYEE DATABASE HANDLER!");
-		    	System.out.println("1) Read Data");
-		    	System.out.println("2) Insert Data");
-		    	System.out.println("3) Update Data");
-		    	System.out.println("4) Delete Data");
-		    	System.out.println("5) Exit");
+		    	System.out.println("EMPLOYEE DATABASE HANDLER!\n1) Read Data\n2) Insert Data\n3) Update Data\n4) Delete Data\n5) Exit");
+		    	System.out.print("=======================================\nPlease Enter your Selection:");
 		    	int n = Integer.parseInt(input.next()); // Integer parse int to avoid string skipping
 		    	try {
 			    	switch(n) {

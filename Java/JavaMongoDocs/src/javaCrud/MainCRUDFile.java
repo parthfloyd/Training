@@ -28,7 +28,7 @@ public class MainCRUDFile {
 		System.out.println("Enter the name:");
 		String name = input.nextLine();
 		System.out.println("Enter the Gender:");
-		String gender = input.next();
+		String gender = input.nextLine();
 		System.out.println("Enter the Department:");
 		String department = input.nextLine();
 		System.out.println("Enter the JoiningYear:");
@@ -59,6 +59,7 @@ public class MainCRUDFile {
 	public void updateData(MongoCollection<Document> collection) {
 		//Fetching input from user
 		System.out.println("Enter the name of employee:");
+		input.next(); // avoid skipping of user data
 		String name = input.nextLine(); //Gotta use nextLine for full name
 		System.out.println("Enter name of new Department:");
 		String department = input.nextLine();

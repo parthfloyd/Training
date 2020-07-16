@@ -1,5 +1,12 @@
 package javaCrud;
-
+/*
+ * Author : Parth Panchal
+ * Description : I am writing this code to practice
+ * 				connectivity of JAVA with MongoDB Database and also
+ * 				practicing CRUD Operations
+ * References: https://jar-download.com/artifacts/org.mongodb/mongo-java-driver/3.8.2/source-code
+ 			 : https://docs.mongodb.com/guides/
+ */
 import java.util.Scanner;
 
 import org.bson.Document;

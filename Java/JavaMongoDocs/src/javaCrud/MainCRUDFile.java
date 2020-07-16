@@ -59,7 +59,7 @@ public class MainCRUDFile {
 	public void updateData(MongoCollection<Document> collection) {
 		//Fetching input from user
 		System.out.println("Enter the name of employee:");
-		String name = input.next();
+		String name = input.nextLine(); //Gotta use nextLine for full name
 		System.out.println("Enter name of new Department:");
 		String department = input.next();
 		collection.updateOne(Filters.eq("name", name),

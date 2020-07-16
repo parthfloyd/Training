@@ -31,7 +31,7 @@ public class MainFile {
 		    	System.out.println("3) Update Data");
 		    	System.out.println("4) Delete Data");
 		    	System.out.println("5) Exit");
-		    	int n = input.nextInt();
+		    	int n = Integer.parseInt(input.next()); // Integer parse int to avoid string skipping
 		    	try {
 			    	switch(n) {
 			    	

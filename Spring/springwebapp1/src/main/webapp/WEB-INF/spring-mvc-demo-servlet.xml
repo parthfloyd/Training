@@ -1,0 +1,13 @@
+<beans>
+
+	<!-- add support for component scanning -->
+	<context:component-scan base-package="com.parth.springcore1"/>
+	
+	<mvc:annotation-driven/>
+	
+	<bean
+	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name = "prefix" value = "/WEB-INF/view/"/>
+	<property name = "suffix" value = ".jsp"/>
+	</bean>
+</beans>

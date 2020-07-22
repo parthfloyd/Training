@@ -3,6 +3,7 @@ package com.parth.mycoolwebapp.mvc.validation;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+
 public class CourseCodeConstraintValidator implements ConstraintValidator<CourseCode,String>{
 
 	private String coursePrefix;
@@ -27,3 +28,5 @@ public class CourseCodeConstraintValidator implements ConstraintValidator<Course
 		return result;
 	}	
 }
+
+

@@ -17,7 +17,7 @@ let addIncome = function(account, amount) {
 let resetAccount = function(account){
     account.income = 0;
     account.expenses = 0;
-    console.log(`Account of ${account.name} is resetted.`)
+    console.log(`Account of ${account.name} is resetted.`);
 }
 //getAccountSummary
 let getAccountSummary = function(account) {

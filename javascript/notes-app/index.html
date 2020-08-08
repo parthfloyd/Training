@@ -9,14 +9,27 @@
     <h1>Notes App</h1>
     <h2>This application was created by Parth Panchal</h2>
     <input type="text" placeholder="Search for notes" id = "search-text">
+    <select name="" id="filter-by">
+        <option value="byEdited">Sort by last edited</option>
+        <option value="byCreated">Sort by recently created</option>
+        <option value="alphabetical">Sort alphabetically</option>
+    </select>
     <div id="notes">
-        
+    
     </div>
     <button id="create-note"> Create Note </button>
-    <button id="remove-all"> Remove All Notes</button>
+    <br><br>
 
+    <!-- <form id="name-form">
+        <input type="text" placeholder="First Name" name="firstName">
+        <button>Submit</button>
+    </form> -->
 
     <!--Scripts-->
+    <script src="js/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+    <script src="js/notes-functions.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

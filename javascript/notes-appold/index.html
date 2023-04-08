@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes App | Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">This App was created by Parth Panchal</h2>
+        </div>
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" placeholder="Search for notes" class = "input"id = "search-text">
+            <select name="" id="filter-by" class="dropdown">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">Sort alphabetically</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="notes"></div>
+        <button id="create-note" class="button"> Create Note </button>
+    </div>
+    <br><br>
+
+    <!-- <form id="name-form">
+        <input type="text" placeholder="First Name" name="firstName">
+        <button>Submit</button>
+    </form> -->
+
+    <!--Scripts-->
+    <script src="js/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+    <script src="js/notes-functions.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

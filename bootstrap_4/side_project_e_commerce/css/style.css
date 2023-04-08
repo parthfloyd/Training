@@ -1,0 +1,34 @@
+body {
+    background-image: linear-gradient(to right, #FFDEE9,#B5FFFC );
+}
+
+.carousel img {
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+/* .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.267);
+    
+} */
+
+.carousel-caption h1, .carousel-caption p{
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.397);
+}
+
+.card img {
+    height: 150px;
+    width: 150px;
+    background-size: auto;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.products-electronics, nav ,footer{
+    background-color: #7C4DFF;
+    color: white;
+}

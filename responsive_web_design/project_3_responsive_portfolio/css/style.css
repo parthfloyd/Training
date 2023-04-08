@@ -1,0 +1,153 @@
+/* Global View aka Desktop View*/
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #EBEBEB;
+}
+
+.header-container {
+    background-color: darkgrey;
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width:100%;
+}
+.container {
+    padding-top:140px;
+    min-height:500px;
+    max-width:1024px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+header {
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    margin: 0 auto;
+    min-height:100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+header .logo span {
+    font-weight: 700;
+}
+
+.navbutton {
+    text-decoration: none;
+    color : white;
+    border: 1px solid white;
+    padding: 11px 25px;
+    margin-left:18px;
+}
+
+.col {
+    width: 30%;
+    margin-bottom:40px;
+    background-color: lightgreen;
+
+}
+
+.col p {
+    color: white;
+    font-size: 0.825rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+    display:none;
+}
+
+.col img {
+    width:100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight:700;
+}
+
+.mob-wrapper {
+    display:none;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+
+    
+    .col {
+        width:45%;
+    }
+
+    .hide-desktop-only {
+        display: block;
+    }
+    
+   
+
+    nav {
+        display:none;
+    }
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0px;
+    }
+    
+    .navbutton {
+        margin-left: 0px;
+    }
+
+    .header-container {
+        position : relative;
+    }
+
+    .container {
+        padding-top: 0px;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top:10px;
+    }
+
+    .mob-navbutton {
+        display : block;
+        background-color:coral;
+        padding:15px 30px;
+        margin-left: -70px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+/* Mobile View*/
+
+@media (max-width: 400px) {
+
+        
+    .col {
+        width:100%;
+    }
+
+    .hide-mobile {
+        display:none;
+    }
+    
+    
+}

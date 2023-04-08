@@ -1,0 +1,24 @@
+body {
+    background-image: linear-gradient(to right, #FFDEE9,#B5FFFC );
+}
+
+nav ,footer{
+    background-color: #7C4DFF;
+    color: white;
+}
+
+.card ,.card-header {
+    background-color: white;
+}
+
+.card img {
+    height: 150px;
+    width: 150px;
+    background-size: auto;
+    object-fit: cover;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+}
